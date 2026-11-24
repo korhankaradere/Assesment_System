@@ -23,7 +23,7 @@ public final class AssessmentFeed {
     public static final String DESIGN_MARK = "Design mark";
     public static final String EXPLANATION_MARK = "Explanation mark";
 
-    public static final List<StudentData> STUDENTS = new ArrayList<>();   // I changed this from private to public
+    private static final List<StudentData> STUDENTS = new ArrayList<>();
 
     private AssessmentFeed() { }
 
