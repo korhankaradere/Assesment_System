@@ -15,7 +15,6 @@ public class Manager {
     public void calculateOverallWeighted(){
         if(AssessmentFeed.getStudentType());
 
-
     }
 
     public void calculateOverallUnweighted(){
