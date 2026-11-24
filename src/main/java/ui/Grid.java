@@ -13,7 +13,7 @@ public class Grid {
 
     public Grid(){
         labels = new JLabel[4];
-        frame.setLayout(new GridLayout(1, 5, 7, 3));
+        frame.setLayout(new GridLayout(4, 1, 7, 3));
         for (int i = 0; i < labels.length; i++) {
             JPanel cell = new JPanel(new BorderLayout());
             cell.setBorder(BorderFactory.createLineBorder(Color.GRAY));
@@ -28,9 +28,12 @@ public class Grid {
         frame.setVisible(true);
     }
 
-    public void refresh(Manager manager) {
-        for (int i = 0; i < 5; i++) {
+    public void refresh(Manager manager) {   // this method is for the module leader
+        for (int i = 0; i < 4; i++) {
             labels[i].setText("<html><center><b>" + AssessmentFeed.getStudentName() + "</b>"
+                    + "<br>Results:" + String.format("%.2f", AssessmentFeed.getResult()) + " C"
+                    + "<br> cid" +AssessmentFeed.getCIDs() + " C"
+                    + "<br> type" +AssessmentFeed.getStudentType() + " C");
         }
     }
     }

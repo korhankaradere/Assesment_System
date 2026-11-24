@@ -1,5 +1,4 @@
 package app;
-import
 import model.DesignViva;
 import model.Manager;
 import model.ProgrammingProject;
@@ -17,13 +16,10 @@ public class Main {
             manager.addExams(new ProgrammingProject());
             manager.addExams(new ProgrammingTest());
             manager.addExams(new DesignViva());
-            Grid grid = new Grid();
 
+            Grid grid = new Grid();
             grid.refresh(manager);
 
-            public String printLog (manager) {
-                    System.out.println("Information for this Student is" + studentname)
-            }
         });
     }
 }

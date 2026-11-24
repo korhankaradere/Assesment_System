@@ -19,9 +19,9 @@ dependencies {
 test {
     useJUnitPlatform()
 }
-application {                                  // ADD at the bottom: which class holds main()
-    mainClass = 'app.Main'             // package + class name of your Main
+application {
+    mainClass = 'app.Main'
 }
-run {                                          // ADD: so Scanner / keyboard input works when running
-    standardInput = System.in                  // connect the console to the program's input
+run {
+    standardInput = System.in
 }
