@@ -8,7 +8,6 @@ import assesments.AssessmentFeed;
 
 import javax.swing.*;
 
-/
 public class Main {
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
@@ -23,3 +22,5 @@ public class Main {
         });
     }
 }
+
+// Main
